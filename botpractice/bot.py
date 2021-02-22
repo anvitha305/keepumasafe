@@ -28,8 +28,8 @@ async def on_message(message):
     if message.author == client.user:
         return
     channels = message.channel_mentions
-    # only executes our code if it contains references to channels
-    if len(channels) != 0:
+    # only executes our code if it contains references to channels and isn't from a private channel
+    if len(channels) != 0 and message.channel not in client.private_channels:
         # checks if the message was sent in one of the Teams Discussion channels
         teamdev = getCatIDbyName(message, "Teams Discussion")
         # ensures bot does the loop stuff for every channel being referenced in the message
