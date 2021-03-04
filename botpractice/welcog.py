@@ -2,7 +2,7 @@ import os
 import discord
 from discord.ext import commands
 
-# :thumbsup: for supporter, :art: for art and actions, :satellite: for communications, :microphone2: for press and 
+# :thumbsup: for supporter, :art: for art and actions, :satellite: for communications, and :microphone2: for press
 rxn_role = {"\U0001f44d": "Supporter", "\U0001f3a8":"Art & Action", "\U0001f4e1":"Communications", "\U0001f399":"Outreach"}
 class Welcog(commands.Cog):
     def __init__(self, bot):
